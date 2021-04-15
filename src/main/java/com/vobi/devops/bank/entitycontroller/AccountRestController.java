@@ -38,7 +38,7 @@ public class AccountRestController {
 
 	@GetMapping(value = "/{accoId}")
 	public ResponseEntity<?> findById(@PathVariable("accoId") String accoId) throws Exception {
-		log.debug("Request to findById() Account");
+		log.info("Request to findById() Account");
 
 		Optional<Account> optionalAccount = accountService.findById(accoId);
 
